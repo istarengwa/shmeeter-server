@@ -10,7 +10,7 @@
 
 ```json
 {
-  "email": string,
+  "identifier": string,
   "password": string
 }
 ```
@@ -19,7 +19,7 @@
 
 ```json
 {
-  "username": "josselinesttresbeau@example.com",
+  "identifier": "josselinesttresbeau@example.com",
   "password": "abcd1234"
 }
 ```
