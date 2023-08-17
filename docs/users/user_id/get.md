@@ -1,6 +1,6 @@
 # User
 
-**URL** : `/users/[user_id]`
+**URL** : `/api/users/[user_id]`
 
 **Method** : `GET`
 
@@ -14,20 +14,15 @@
 
 ```json
 {
-  "confirmed": boolean;
-  "created_at": Date;
-  "updated_at": Date;
-  "description": string;
-  "email": string;
-  "id": number;
-  "posts_liked": Post[];
-  "provider": string;
-  "role": {
-    "id": number;
-    "name": string;
-    "description": string;
-    "type": string;
-  }
-  "username": string;
+  "id": number,
+  "username": string,
+  "email": string,
+  "provider": string,
+  "confirmed": boolean,
+  "blocked": boolean,
+  "description": string,
+  "created_at": Date,
+  "updated_at": Date,
+  "posts_liked": Post[]
 }
 ```

@@ -1,6 +1,6 @@
 # Register
 
-**URL** : `/auth/local/register`
+**URL** : `/api/auth/local/register`
 
 **Method** : `POST`
 
@@ -36,7 +36,20 @@
 
 ```json
 {
-    "jwt": string;
-    "user": User;
+  "jwt": string,
+  "user": {
+    {
+      "id": number,
+      "username": string,
+      "email": string,
+      "provider": string,
+      "confirmed": boolean,
+      "blocked": boolean,
+      "description": string,
+      "created_at": Date,
+      "updated_at": Date,
+      "posts_liked": Post[]
+    }
+  }
 }
 ```

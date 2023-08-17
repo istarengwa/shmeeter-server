@@ -1,6 +1,6 @@
 # User
 
-**URL** : `/users`
+**URL** : `/api/users`
 
 **Method** : `GET`
 
@@ -13,5 +13,30 @@
 **Content schema**
 
 ```json
-User[]
+User[
+        {
+    "id": number,
+    "username": string,
+    "email": string,
+    "provider": string,
+    "confirmed": boolean,
+    "blocked": boolean,
+    "description": string,
+    "created_at": Date,
+    "updated_at": Date,
+    "posts_liked": Post[]
+    },
+        {
+    "id": number,
+    "username": string,
+    "email": string,
+    "provider": string,
+    "confirmed": boolean,
+    "blocked": boolean,
+    "description": string,
+    "created_at": Date,
+    "updated_at": Date,
+    "posts_liked": Post[]
+    }
+]
 ```

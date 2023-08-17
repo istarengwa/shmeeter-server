@@ -14,7 +14,7 @@
     "text": {
       "type": "text"
     },
-    "users_permissions_user": {
+    "author": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"

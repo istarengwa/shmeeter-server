@@ -1,6 +1,6 @@
 # New Post
 
-**URL** : `/posts`
+**URL** : `/api/posts`
 
 **Method** : `POST`
 
@@ -10,8 +10,8 @@
 
 ```json
 {
-  "text": string;
-  "user": number;
+  "text": string,
+  "author": user_id
 }
 ```
 
@@ -23,13 +23,11 @@
 
 ```json
 {
-  "id": number;
-  "created_at": Date;
-  "updated_at": Date;
-  "like": number;
-  "modified": boolean;
-  "text": string;
-  "user": User;
-  "users_likes": User[];
+  "id": number,
+  "created_at": Date,
+  "updated_at": Date,
+  "like": number,
+  "modified": boolean,
+  "text": string
 }
 ```

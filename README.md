@@ -47,7 +47,7 @@ Voici la configuration :
 
 - Pour le rôle "Authenticated":
   - Dans "Posts" (dans la section "Application"), coche *tout*.
-  - Dans "User" (dans la section "Users-Permissions"), coche "find", "findone", "me", et "updateme".
+  - Dans "User" (dans la section "Users-Permissions"), coche "find", "findone", "me", et "updateMe".
   - Clique sur "Save".
 - Pour le rôle "Public":
   - Dans "Posts" (toujours dans la section "Application"), coche uniquement "find".
@@ -74,7 +74,9 @@ Bravo, la configuration est terminée ! 🎉
 - [Liste des utilisateurs](./docs/users/get.md)&nbsp;: `GET /api/users`
 - [Profil d'un utilisateur](./docs/users/user_id/get.md)&nbsp;: `GET /api/users/[user_id]`
 - [Mon profil](./docs/users/me/get.md)&nbsp;: `GET /api/users/me`
-- [Modifier mon profil](./docs/users/me/put.md)&nbsp;: `PUT /api/users/me`
+
+Cette partie a été recodée spécifiquement pour la v4 de Strapi :
+- [Modifier mon profil](./docs/users/me/put.md)&nbsp;: `PUT /api/users-permissions/users/me`
 
 ## Remerciements
 
